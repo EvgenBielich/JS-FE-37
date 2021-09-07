@@ -134,7 +134,7 @@ function getMathResult() {
    let num2 = prompt('Enter the second number')
    let symbol = prompt('Enter the symbol')
    let total = 0
-   console.log(num1, num2, symbol);
+   // console.log(num1, num2, symbol);
    switch (symbol) {
       case '+':
          total = num1 + num2
@@ -156,4 +156,26 @@ function getMathResult() {
    }
    return total
 }
-console.log('result', getMathResult());
+// console.log('result', getMathResult());
+
+
+function findLongestWord(string) {
+   // Change code below this line
+   const splitedArr = string.split(' ');
+   console.log(splitedArr);
+   let longest = splitedArr[0];
+   console.log(longest);
+   for (const text of splitedArr) {
+      if (text.length > longest.length) {
+         longest = text
+      }
+   }
+   return longest;
+ 
+ 
+   // Change code above this line
+}
+ 
+findLongestWord("The quick brown fox jumped over the lazy dog");
+
+findLongestWord("Google do a roll")
