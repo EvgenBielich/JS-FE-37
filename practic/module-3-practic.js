@@ -1,7 +1,7 @@
 // !TASK 1
 
 const product = {
-   name:'prod',
+   name: 'prod',
    price: 0,
    quantity: 0,
 
@@ -40,7 +40,7 @@ const product = {
 
       // 3 тернарный оператор
       isCost ? (this.quantity -= value) : (this.quantity += value)
-      
+
    }
 }
 
@@ -65,7 +65,7 @@ const product = {
 
 product.getTotalPrice = function () {
    return this.price * this.quantity
-   
+
 }
 // console.log(product.getTotalPrice());
 
@@ -74,16 +74,16 @@ product.getTotalPrice = function () {
 
 const products = [
    { name: 'Grape', price: 80, quantity: 2 },
-   {name: 'Banana', price: 30, quantity: 5},
-   {name: 'Kiwi', price: 100, quantity: 1.5},
+   { name: 'Banana', price: 30, quantity: 5 },
+   { name: 'Kiwi', price: 100, quantity: 1.5 },
 ]
 
 function getTotalPrice(arr) {
    let totalPrice = 0
 
-for (let i = 0; i < arr.length; i++) {
-   console.log(products[i])
-      totalPrice+=products[i].price*products[i].quantity
+   for (let i = 0; i < arr.length; i++) {
+      console.log(products[i])
+      totalPrice += products[i].price * products[i].quantity
    }
    // console.log('totalPrice:', totalPrice);
 }
@@ -126,10 +126,10 @@ function getResponse(arr, prod, count) {
       // }
 
       //! 2--------------------------------------------------------------
-      const { name, quantity,price} = product
+      const { name, quantity, price } = product
       if (name === prod) {
          // console.log(`${prod} есть на складе`);
-         return quantity >= count 
+         return quantity >= count
             ? console.log(`${prod} могу купить за ${product.price * count} монет`)
             : console.log(`${prod} нет в достаточном количестве`);
       }
@@ -138,3 +138,4 @@ function getResponse(arr, prod, count) {
 }
 
 getResponse(allProducts, 'lavazza', 24)
+
