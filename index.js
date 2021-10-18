@@ -10,7 +10,13 @@
 // import './js/module-4-cb.js';
 // import './js/module-4-stack.js';
 // import './js/module-4-closure.js';
-import './js/module-4-this.js';
+// import './js/module-4-this.js';
+// import './js/module-5-constructors.js';
+
+// import './js/module-8-propagation.js';
+// import './js/module-8-debounce.js';
+// import './js/module-8-throttle.js';
+import './js/module-8-IntersectionObserver.js';
 
 
 // !PRACTIC
